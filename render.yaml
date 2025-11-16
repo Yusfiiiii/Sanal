@@ -3,8 +3,8 @@ services:
     name: my-discord-bot
     env: node
     plan: free
-    region: frankfurt
     branch: main
+    region: frankfurt
     buildCommand: "npm install"
     startCommand: "node index.js"
     autoDeploy: true
