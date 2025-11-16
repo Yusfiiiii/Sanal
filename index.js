@@ -7,30 +7,6 @@ import {
   ActivityType
 } from "discord.js";
 
-const app = express();
-
-// ---------------------
-//  EXPRESS UPTIME SERVER
-// ---------------------
-app.get("/", (req, res) => {
-  res.send("Bot Çalışıyor | Uptime Aktif");
-});
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log("Express server aktif:", PORT);
-});
-
-// ---------------------
-//  AUTO PING (every 30s)
-// ---------------------
-setInterval(() => {
-  if (!process.env.RENDER_EXTERNAL_URL) return;
-  fetch(`https://${process.env.RENDER_EXTERNAL_URL}`)
-    .then(() => console.log("Ping gönderildi"))
-    .catch(err => console.log("Ping hatası:", err));
-}, 30000);
-
 // ---------------------
 //  DISCORD BOT
 // ---------------------
@@ -96,3 +72,4 @@ client.on("presenceUpdate", async (oldPresence, newPresence) => {
 });
 
 client.login(process.env.TOKEN);
+keep_alive();
