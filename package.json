@@ -1,0 +1,16 @@
+{
+  "name": "discord-status-role-bot",
+  "version": "1.0.0",
+  "description": "Custom status'a göre rol veren Discord bot + Render uptime",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.15.0",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2",
+    "dotenv": "^16.3.1"
+  }
+}
