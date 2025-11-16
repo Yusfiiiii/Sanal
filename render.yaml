@@ -5,7 +5,7 @@ services:
     plan: free
     branch: main
     region: frankfurt
-    buildCommand: "npm install"
+    buildCommand: "node install"
     startCommand: "node index.js"
     autoDeploy: true
     healthCheckPath: /
