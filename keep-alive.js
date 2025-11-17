@@ -11,7 +11,7 @@ res.send("✅ Bot aktif! keep_alive.js çalışıyor 🚀");
 });
 
 app.listen(port, () => {
-const url = process.env.RENDER_EXTERNAL_URL || "https://rengst-bot.onrender.com";
+const url = process.env.RENDER_EXTERNAL_URL || "https://sanal.onrender.com";
 console.log(`🌐 Keep-alive sunucusu aktif: ${url} (port ${port})`);
 
 // 30 saniyede bir kendi URL’ine ping at  
