@@ -72,6 +72,6 @@ client.on("presenceUpdate", async (oldPresence, newPresence) => {
 });
 
 client.login(process.env.TOKEN);
-import keep_alive from './keep_alive.js';
+import keep-alive from './keep_alive.js';
 
 keep_alive();
